@@ -1,52 +1,12 @@
 \documentclass{article}
-\usepackage[numbers,sort&compress]{natbib}
 \usepackage{ngerman}
-%\usepackage[german]{varioref}
-\usepackage{booktabs}
-\usepackage{footnote}
-\usepackage{listings}
-\usepackage[style=ngerman]{csquotes}
-\usepackage{tikz}
-\usepackage{graphics}
-\usepackage[]{acronym}
-%% ---------------- end of usepackages -------------
-
-
-
-% Farbdefinitionen
-\definecolor{linkcolorIntern}{rgb}{0.35,0,0}
-\definecolor{linkcolorExtern}{rgb}{0,0,0.65}
-
-
-%% Längen für Bilder
-\newlength{\fcw}
-\setlength{\fcw}{\columnwidth}
-
-
-% Print URLs not in Typewriter Font
-\def\UrlFont{\rm}
-
-\newcommand{\blankpage}{% Leerseite ohne Seitennummer, nächste Seite rechts
-  \clearpage{\pagestyle{empty}\cleardoublepage}
-}
+\usepackage[utf8]{inputenc}
+\usepackage{musixtex}
 \makeindex
 
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-%\maketitle
-
 \tableofcontents
-
 \newpage
-
-\pagenumbering{roman}
-
 
 Dies ist ein neuer Text f\"ur 
 ALLE MEINE ENTCHEN  \\
@@ -60,9 +20,20 @@ $$ f_x = f_{x-2} + f_{x-1}  $$
 \texttt{K\"opfchen}
 \textsl{in das Wasser}
 
-\chapter{Dies ist die erste Strophe von }
-\section{WO KAPITEL?}
+\section{Kapitel Wursti}
+\newpage
+\section{Kapitel Fee}
+\begin{center}
+Alle meine Entchen  \newline
+$\mid$ : schwimmen auf dem See, : $\mid$ \newline
+Köpfchen in das Wasser, \newline
+Schwänzchen in die Höh. \newline
+\end{center}
+
+\begin{music} 
+\instrumentnumber{1}
+\setclef{}
+\notes \ca{c} \ca{d} \en
+\end{music}
+
 \end{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%% DOCUMENT END %%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
