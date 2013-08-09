@@ -1,0 +1,85 @@
+\documentclass{article}
+% Autor: Roland Bless 1996-2009, bless <at> kit.edu
+% ----------------------------------------------------------------
+% Diplomarbeit - Hauptdokument
+% ----------------------------------------------------------------
+%%
+%% $Id: thesis.tex 65 2012-05-10 10:32:11Z bless $
+%%
+% wissdoc Optionen: draft, relaxed, pdf --> siehe wissdoc.cls
+% ------------------------------------------------------------------
+% Weitere packages: (Dokumentation dazu durch "latex <package>.dtx")
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[german]{varioref}
+\usepackage{booktabs}
+% \usepackage{reftextvario}
+% \usepackage{verbatim}
+% \usepackage{float}    %z.B. \floatstyle{ruled}\restylefloat{figure}
+% \usepackage{subfigure}
+% \usepackage{fancybox} % für schattierte,ovale Boxen etc.
+% \usepackage{tabularx} % automatische Spaltenbreite
+% \usepackage{supertab} % mehrseitige Tabellen
+\usepackage{footnote}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{listings}
+\usepackage[style=ngerman]{csquotes}
+\usepackage{tikz}
+\usepackage{graphics}
+\usepackage[]{acronym}
+%% ---------------- end of usepackages -------------
+
+
+
+% Farbdefinitionen
+\definecolor{linkcolorIntern}{rgb}{0.35,0,0}
+\definecolor{linkcolorExtern}{rgb}{0,0,0.65}
+
+
+%% Längen für Bilder
+\newlength{\fcw}
+\setlength{\fcw}{\columnwidth}
+
+
+% Print URLs not in Typewriter Font
+\def\UrlFont{\rm}
+
+\newcommand{\blankpage}{% Leerseite ohne Seitennummer, nächste Seite rechts
+  \clearpage{\pagestyle{empty}\cleardoublepage}
+}
+\makeindex
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%\maketitle
+
+\tableofcontents
+
+\newpage
+
+\pagenumbering{roman}
+
+
+Dies ist ein neuer Text f\"ur 
+ALLE MEINE ENTCHEN  \\
+\textbf{SCHWIMMEN} auf
+dem See
+\newline
+\textit{SCHWIMMEN} auf
+dem See 
+\newline
+$$ f_x = f_{x-2} + f_{x-1}  $$ 
+\texttt{K\"opfchen}
+\textsl{in das Wasser}
+
+\chapter{Dies ist die erste Strophe von }
+\section{WO KAPITEL?}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% DOCUMENT END %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
