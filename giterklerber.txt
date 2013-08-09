@@ -1,2 +1,6 @@
-git add * --> Index priv Repo
-git commit --> *
+git clone
+
+git add dateiname --> Index priv Repo
+git commit --> * Index vom add ins priv Repo
+git pull --> öffentliches Repo holen
+git push --> private Repo veröffentlichen
