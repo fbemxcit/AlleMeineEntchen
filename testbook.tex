@@ -1,0 +1,36 @@
+\documentclass[10pt,a4paper,draft]{book}
+\usepackage[utf8]{inputenc}
+%\usepackage[german]{babel}
+\usepackage{braille}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+%\usepackage{makeidx}
+%\usepackage{graphicx}
+%\usepackage{lmodern}
+%\usepackage{kpfonts}
+%\usepackage{fourier}
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\huge\bfseries}{\thechapter}{20pt}{}
+%\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+\author{Fee Bemberg}
+\title{Testen der Book Option}
+\begin{document}
+\chapter{Braille}
+
+\braille{this is awesome}
+
+\section{abc}
+\braille{a b c d e f g h i j k l m n o p q r s t u v w x y z}
+
+\section{ABC}
+\braille{A B C D E F G H I J K L M N O P Q R S T U V W X Y Z}
+
+\section{Umlaute und Lautzeichen}
+\braille{ie ei eu äu au ch sch st}
+
+\section{123}
+\braille{ 1 2 3 4 5 6 7 8 9 0}
+
+\end{document}
